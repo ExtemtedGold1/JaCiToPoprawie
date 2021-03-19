@@ -1,9 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body
 {
     margin: 0;
     background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+}
+.body
+{
 }
 .container
 {
@@ -12,7 +19,7 @@ body
 }
 header
 {
-    background: #55d6aa;
+    background: #9D7858;
 }
 header::after
 {
@@ -49,10 +56,33 @@ nav a
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
+    padding: 20px;
 }
 
-nav a:hover
+nav ul li a:hover
 {
     color: black;
+    border-top: 4px solid brown;
+    font-weight: 700;
+    padding-top: 22px;
+
+}
+.container
+{
+    max-width: 1300px;
+}
+
+.content
+{
+    background-color: white;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider
+{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
