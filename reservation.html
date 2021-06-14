@@ -6,15 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-css/main.css">
+    <link rel="stylesheet" href="style-css/header.css">
+    <link rel="stylesheet" href="style-css/preload.css">
     <link rel="icon" href="img/icon-barber.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <script src="js/site-working.js" defer></script>
     <title>BarberShop</title>
 </head>
 
 <body>
+    <!--Preload-->
+    <div class="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
     <header>
-        <div></div>
         <nav class="navbar">
             <div class="brand-title">
                 BarberShop-Website
@@ -32,7 +40,12 @@
         </nav>
     </header>
     <div class="img-container">
-        <div class="formularz"><div class="calendar">
+        <p id="working">
+            strona w budowie
+        </p>
+        <!--<div class="form-class">
+        <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%237986CB&amp;ctz=Europe%2FWarsaw&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bTJuc3NxMTIzcmV0Ym0wY3NpdGh0b2FzOGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=enN0LnRhcm5vdy5wbF9jbGFzc3Jvb205NjM3MTc3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2333B679&amp;color=%23795548&amp;color=%230047a8&amp;color=%230B8043&amp;mode=MONTH" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
         <form>
             <label for="fname">Imię: </label>
@@ -40,8 +53,14 @@
             <br>
             <label for="lname">Nazwisko: </label>
             <input type="text" name="fname">
-        </form></div>
-    </div>
+        </form>
+        </div>
+    </div>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle()
+        }, 1500);
+    </script>
 </body>
-
 </html>

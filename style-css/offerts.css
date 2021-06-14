@@ -1,0 +1,80 @@
+.offer-card
+{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;  
+    position: relative;
+}
+.card{
+    background-color: #222;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+}
+.card:hover , .card:focus{
+    animation: zoomeffect 1s;
+    animation-delay: none;
+}
+.card-inner{
+    position: relative;
+    margin: 12.5%;
+    padding: 12.5%;
+    color: white;
+    border: 1px solid black;
+
+}
+.card-inner:hover{
+    transition: all 1s;
+    color: black;
+    filter: blur(0);
+    background-color: white;
+    padding-bottom: 40%;
+}
+.card-inner:hover .small-btn{
+    display: block;
+}
+
+.small-btn{
+    position: absolute;
+    top: 80%;
+    color: black;
+    border: 4px solid black;
+    padding: 10px 20px;
+    width: 150px;
+    display: none;
+
+}
+
+#strzyzenie{background-image: url('../img/fryzura.jpg');}
+#golenie{background-image: url('../img/bearshave.jpg');}
+#komplet{background-image: url('../img/haircuteofert.jpg');}
+#siwizna{background-image: url('../img/siwizna.jpg');}
+
+@keyframes zoomeffect {
+    0%{
+        transform: scale(1);
+        background-position: center;
+    }
+    70%{
+        transform: scale(1.1);
+    }
+    100%{
+        background-position: center;
+        transform: scale(1.1);
+    }
+    
+}
+
+/*
+@media only screen and (max-width: 610px){
+
+}*/
+
+@media only screen and (max-width:540px) {
+    .offer-card{
+        width: 100%;
+        margin: 5px 10px;
+        padding: 15px;
+    }
+}

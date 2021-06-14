@@ -5,20 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Najlepszy barber salon w mieście - Ustrzyki Dolne">
+    <meta name="keyword" content="Barber, Barber shop, Barber Shop website, Ustrzyki dolne, Ustrzyki dolne Barber">
+    <meta name="author" content="Wiktor Bielecki">
+    <meta name="copyright" content="Barber Shop Website">
+    <meta name="robots" content="none">
+    <meta http-equiv="cache-control" content="no-cache">
     <link rel="stylesheet" href="style-css/main.css">
+    <link rel="stylesheet" href="style-css/preload.css">
+    <link rel="stylesheet" href="style-css/header.css">
+    <link rel="stylesheet" href="style-css/offerts.css">
     <link rel="icon" href="img/icon-barber.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <link rel="preload" as="style" href="./style-css/main.css">
+    <link rel="preload" as="image" href="../img/fryzura.jpg">
+    <link rel="preload" as="image" href="../img/bearshave.jpg">
+    <link rel="preload" as="image" href="../img/haircuteofert.jpg">
+    <link rel="preload" as="image" href="../img/siwizna.jpg">
+    <link rel="preload" as="image" href="../img/brear.jpg">
+    <link rel="preload" as="image" href="../img/frez.jpg">
+    <link rel="preload" as="image" href="../img/fryzura.jpg">
+    <link rel="preload" as="image" href="../img/img-container-jpg.jpg">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <title>BarberShop</title>
 </head>
 
 <body>
+    <!--Preload-->
+    <div class="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
     <!--====================Header=area====================================-->
-
     <header>
         <div></div>
         <nav class="navbar">
@@ -40,7 +64,6 @@
         </nav>
     </header>
     <!--====================Section=area===========-->
-    <!--Slider-gallery-->
     <div class="img-container">
         <div class="inner-container">
             <h1>BARBER SHOP</h1>
@@ -51,7 +74,7 @@
     <section class="white">
         <p class="pretitle">Witaj w męskim świecie</p>
         <div id="onas">
-            <div class="box">
+            <div class="box mar">
 
                 <h2>O nas</h2>
                 <article>
@@ -64,78 +87,62 @@
                         Dla najbardziej zapalonych miłośników czekają różne niespodzianki, których jeszcze nie
                         widzieliscie na rynku.
                     </p>
-                    <p>Pierdol pierdol
-                        Jp2gmd
-                    </p>
                 </article>
             </div>
             <div class="box map-box">
                 <iframe id="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83035.91982119573!2d22.508218079346904!3d49.430224550934994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bf2b1791dc037%3A0x51dd94df3c61a7d!2s38-700%20Ustrzyki%20Dolne!5e0!3m2!1spl!2spl!4v1617709911285!5m2!1spl!2spl"
-                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
             </div>
         </div>
     </section>
     <section id="gallery" class="black">
+        <h2>Galeria</h2>
         <div class="slider">
-            <figure>
-                <img src="./img/brear.jpg" alt="brear">
-                <img src="./img/frez.jpg" alt="frez">
-                <img src="./img/fryzura.jpg" alt="fryzura">
-                <img src="./img/salon.jpg" alt="salon">
-            </figure>
         </div>
     </section>
     <section id="cennik" class="white">
         <div>
             <h2>Oferty</h2>
         </div>
-        <div class="flex space-around"> 
-            <div class="offer-card" id="strzyzenie">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Strzyżenie</h2>
-                    </div>
-                    <div class="flip-card-back">
+        <div class="gird"> 
+            <div class="offer-card" >
+                <div class="card" id="strzyzenie">
+                    <div class="card-inner">
                         <h2>Strzyżenie</h2>
                         <p>Profesionalne strzyżenie, modelowanie fryzury</p>
                         <p>20 zł (ok 20 min.)</p>
+                        <a href="#" class="small-btn">Zapisz sie</a>
                     </div>
                 </div>
             </div>
-            <div class="offer-card" id="golenie">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Golenie</h2>
-                    </div>
-                    <div class="flip-card-back">
+            <div class="offer-card">
+                <div class="card" id="golenie">
+                    <div class="card-inner">
                         <h2>Golenie</h2>
                         <p>Golenie klasyczne, nakładnie preparatów</p>
                         <p>40zł (ok 30 min.)</p>
+                        <a href="#" class="small-btn">Zapisz sie</a>
                     </div>
                 </div>
             </div>
-            <div class="offer-card" id="komplet">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Komplet</h2>
-                    </div>
-                    <div class="flip-card-back">
+            <div class="offer-card">
+                <div class="card"  id="komplet">
+                    <div class="card-inner">
                         <h2>Komplet</h2>
                         <p>Komplet strzyżenia i kolenia fryzur oraz bród</p>
                         <p>50zł (ok 30 min.)</p>
+                        <a href="#" class="small-btn">Zapisz sie</a>
                     </div>
                 </div>
             </div>
-            <div class="offer-card" id="siwizna">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2>Tuszowanie siwizny</h2>
-                    </div>
-                    <div class="flip-card-back">
+            <div class="offer-card">
+                <div class="card"  id="siwizna">
+                    <div class="card-inner">
                         <h2>Tuszowanie siwizny</h2>
                         <p>Jeśli chcesz się pozbyć szybko siwizny jest to idealne dla Ciebie</p>
                         <p>50-100zł (ok 30 min.)</p>
+                        <a href="#" class="small-btn">Zapisz sie</a>
                     </div>
                 </div>
             </div>
@@ -145,36 +152,32 @@
         <p class="pretitle">Nowy Salon</p>
         <div id="open">
         <div class="box">
-            
-            <img src="https://picsum.photos/id/257/459/287" alt="">
+            <img src="img/newsalon.jpg" alt="newsalon">
         </div>
         <div class="box">
             <h2>Jesteś otwarci 6 dni w tygodniu</h2>
             <article>
                     <p>Nasze drzwi zawsze stoją przed Tobą otworem. Jeżeli chcesz dowiedzieć się czegoś więcej o naszych usługach lub po prostu porozmawiać - wpadaj w każdej chwili!
-                        Jeżeli jesteś już zdecydowany i chcesz zarezerwować sobie termin - skorzystaj z naszego internetowego systemu do rezerwacji i umów się na spotkanie z wybranym barberem. Działamy od poniedziałku do piątku w godzinach 8:00-21:00, a w soboty od 8:00 do 14:00.</p>
+                        Jeżeli jesteś już zdecydowany i chcesz zarezerwować sobie termin - skorzystaj z naszego internetowego systemu do rezerwacji i umów się na spotkanie z wybranym barberem. Działamy od poniedziałku do piątku w godzinach 8:00-21:00, a w soboty od 8:00 do 14:00.
+                    </p>
             </article>
         </div>
     </div>
-    </section>
-    <section class="white">
-        <div>
-        </div>
     </section>
     <footer>
         <div class="footer-content">
             <h3>BarberShop-Website</h3>
             <p>
-                Copyright (c) 2021 by ExtemtedGold1 <span><a href="https://codepen.io/ExtemtedGold1/pen/OJWEgGq" target="_blank">codepen.io/ExtemtedGold1</a></span>
+                Copyright (c) 2021 by Wiktor 
             </p>
             <div class="footer-text">
-
-            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-                    associated documentation files (the "Software"), to deal in the Software without restriction,
-                    including without limitation the rights to use, copy, modify, merge, publish, distribute.
-                </p>
-                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-                LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+            <p>
+                <strong>Kontakt</strong><br>
+                email: Przykładowyemail@mail.com | 
+                numer: 808808808
+            </p>
+            <p>
+                Strona zrobiona w celach naukowych oraz zaliczeniowych
             </p>
 
             </div>
@@ -185,9 +188,15 @@
             </ul>
         </div>
         <div class="fotter-bottom">
-            <p>copyright &copy;2021 BarberShop-Website. designed by <span><a href="mailto:FrontendWebCompany@protonmail.com">ExtemtedGold1</a></span></p>
+            <p>copyright &copy;2021 BarberShop-Website. designed by <span><a href="mailto:FrontendWebCompany@protonmail.com">Wiktor</a></span></p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle()
+        }, 1500);
+    </script>
 </body>
 
 </html>
